@@ -1,7 +1,16 @@
 {
     "name": "james-xiao/think-cache",
     "minimum-stability": "dev",
-    "require": {},
+    "description": "tp5.0 cache",
+    "authors": [
+        {
+            "name": "james xiao"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4"
+    },
     "autoload": {
         "psr-4": {
             "xiao\\": "lib/"
