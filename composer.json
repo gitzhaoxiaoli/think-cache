@@ -1,0 +1,10 @@
+{
+    "name": "james-xiao/think-cache",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "xiao\\": "lib/"
+        }
+    }
+}
