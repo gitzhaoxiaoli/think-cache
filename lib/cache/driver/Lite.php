@@ -36,8 +36,8 @@ class Lite extends Driver
         if (!empty($options)) {
             $this->options = array_merge($this->options, $options);
         }
-        if (substr($this->options['path'], -1) != DS) {
-            $this->options['path'] .= DS;
+        if (substr($this->options['path'], -1) != DIRECTORY_SEPARATOR) {
+            $this->options['path'] .= DIRECTORY_SEPARATOR;
         }
 
     }
@@ -182,6 +182,6 @@ class Lite extends Driver
             $this->rm('tag_' . md5($tag));
             return true;
         }
-        array_map("unlink", glob($this->options['path'] . ($this->options['prefix'] ? $this->options['prefix'] . DS : '') . '*.php'));
+        array_map("unlink", glob($this->options['path'] . ($this->options['prefix'] ? $this->options['prefix'] . DIRECTORY_SEPARATOR : '') . '*.php'));
     }
 }
